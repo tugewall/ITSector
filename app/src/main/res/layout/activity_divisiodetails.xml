@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".divisiodetails">
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/Maintoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/MainToolbar"
+            android:gravity = "center"
+            android:textSize="20dp"
+            android:id="@+id/toolbar_title"
+            android:layout_centerInParent="true"
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/imagelight"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/lightoff"
+        android:layout_below="@id/Maintoolbar"/>
+
+    <TextView
+        android:id="@+id/namedivision"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_centerInParent="true"
+        android:textSize="30dp"
+
+        />
+
+    <Space
+        android:id="@+id/space2"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/button"
+        android:layout_below="@id/namedivision"
+        />
+
+    <TextView
+        android:id="@+id/turndivison"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_below="@+id/space2"
+        android:layout_centerInParent="true"
+        android:textSize="25dp"/>
+
+
+</RelativeLayout>

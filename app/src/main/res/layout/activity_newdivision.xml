@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".newdivision">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/Maintoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        tools:ignore="MissingConstraints">
+
+    </android.support.v7.widget.Toolbar>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:layout_centerInParent="true"
+        android:onClick="addnew"
+
+        />
+
+    <Space
+        android:id="@+id/space1"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/button"
+        />
+
+    <EditText
+        android:id="@+id/newdevtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/space1"
+        android:hint="@string/division"
+
+
+        />
+
+</RelativeLayout>
