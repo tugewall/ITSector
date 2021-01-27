@@ -27,6 +27,7 @@
         android:gravity="right"
         android:focusable="false"
         android:text=""
+        android:clickable="false"
     />
 
     <Space
